@@ -9,9 +9,9 @@ module Memorable
       self.all.count
     end
   end
-  module InstanceMethods
+  module InstanceMethods # include to both classes 
     
-    def initialize
+    def initialize # removed from song, but used super in artist 
       self.class.all << self 
     end
   end
