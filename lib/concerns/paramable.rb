@@ -1,5 +1,4 @@
-  
-module Paramable # included in both classes 
+  module Paramable # included in both classes 
 
     def to_param # replaced from both classes 
       name.downcase.gsub(' ', '-')
