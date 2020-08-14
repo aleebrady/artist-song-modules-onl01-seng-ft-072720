@@ -12,7 +12,7 @@ module Memorable
   module InstanceMethods # include to both classes 
     
     def initialize # removed from song, but used super in artist to keep track of songs 
-      self.class.all << self # 
+      self.class.all << self 
     end
   end
   
